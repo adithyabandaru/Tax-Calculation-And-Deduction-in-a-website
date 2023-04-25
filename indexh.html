@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Screen</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/indexh.css') }}">
+</head>
+
+<body>
+    <h1>Welcome to Tax Calculation Site</h1>
+    <p>Choose an option:</p>
+    <ul>
+        <li><a href="{{ url_for('indexhome') }}">About</a></li>
+        <li><a href="{{ url_for('indexc') }}">Calculation</a></li>
+        <li><a href="{{ url_for('indext') }}">Deduction</a></li>
+    </ul>
+</body>
+
+</html>

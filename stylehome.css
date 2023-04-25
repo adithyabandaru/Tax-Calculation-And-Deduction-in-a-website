@@ -1,0 +1,52 @@
+/* Set the font family and size for the entire document */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Set styles for the page title */
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Set styles for the section headings */
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Set styles for the paragraphs */
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Set styles for the unordered list */
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Set styles for the list items */
+
+li {
+    margin-bottom: 5px;
+}

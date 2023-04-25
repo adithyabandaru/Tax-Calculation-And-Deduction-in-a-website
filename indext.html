@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tax Deduction Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+
+<body>
+    <h1>Tax Deduction Calculator</h1>
+    <form>
+        <label for="income">Income:</label>
+        <input type="number" id="income" name="income" required>
+
+        <label for="tax-rate">Tax Rate:</label>
+        <input type="number" id="tax-rate" name="tax-rate" required>
+
+        <button type="button" id="calculate-button">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        // Get references to the input elements and the result element
+        const incomeInput = document.getElementById('income');
+        const taxRateInput = document.getElementById('tax-rate');
+        const resultElement = document.getElementById('result');
+
+        // Add a click event listener to the calculate button
+        document.getElementById('calculate-button').addEventListener('click', function() {
+            // Parse the input values as numbers
+            const income = parseFloat(incomeInput.value);
+            const taxRate = parseFloat(taxRateInput.value);
+
+            // Calculate the tax
+            const tax = (income * taxRate) / 100;
+
+            // Update the result element with the tax amount
+            resultElement.textContent = `Tax: $${tax.toFixed(2)}`;
+        });
+    </script>
+</body>
+
+</html>
